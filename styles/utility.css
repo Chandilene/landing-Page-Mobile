@@ -25,7 +25,18 @@ border: solid violet;
 
 .even-columns{
     display: grid;
+}
 
+.flex{
+    display: flex;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+
+.grid{
+    display: grid;
 }
 
 @media (width >= 80em){
