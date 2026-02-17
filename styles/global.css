@@ -53,6 +53,8 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+
   background-color: var(--background-color);
 }
 
@@ -82,23 +84,26 @@ a {
   color: inherit;
 }
 
-a:hover{
-    background: linear-gradient(90deg, var(--brand-color-secondary) 0%, var(--brand-color-primary)100%);
+a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
+  );
 
-    -webkit-background-clip:text;
-    background-clip:text;
-    color: transparent;
-
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 ul[role="list"] {
   list-style: none;
 }
 
-img{
-        max-width:100% ;
-        display: inline-block;
-    }
+img {
+  max-width: 100%;
+  display: inline-block;
+}
 
 @media (width >= 80em) {
   :root {
@@ -112,7 +117,7 @@ img{
     --px-lg: 2rem;
   }
 
-  .even-columns{
+  .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
